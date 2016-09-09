@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="extractFourSquareResponse">
+    <DisplayName>extractFourSquareResponse</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="fourSquareVenueName" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.name</JSONPath>
+        </Variable>
+       <Variable name="fourSquareVenueUrl" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.url</JSONPath>
+        </Variable>
+<<<<<<< HEAD
+<!--       <Variable name="fourSquareVenueSpecialMessage" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.specials.items[0].message</JSONPath>
+        </Variable> -->
+        <Variable name="fourSquareVenueSpecialMessage" type="string">
+            <JSONPath>$.response.groups[0].items[0].snippets.items[0].detail.object.message</JSONPath>
+=======
+      <Variable name="fourSquareVenueSpecialMessage" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.specials.items[0].message</JSONPath>
+>>>>>>> 9bf5effaa5a7b4762ee47b10fc1f9f2aeff3e6f4
+        </Variable>
+      <Variable name="fourSquareVenueLat" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.location.lat</JSONPath>
+        </Variable>
+      <Variable name="fourSquareVenueLng" type="string">
+            <JSONPath>$.response.groups[0].items[0].venue.location.lng</JSONPath>
+        </Variable>
+<<<<<<< HEAD
+
+=======
+      
+>>>>>>> 9bf5effaa5a7b4762ee47b10fc1f9f2aeff3e6f4
+    </JSONPayload>
+    <Source clearPayload="false">response.content</Source>
+</ExtractVariables>

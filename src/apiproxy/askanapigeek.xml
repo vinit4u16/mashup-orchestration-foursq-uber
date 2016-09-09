@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<<<<<<< HEAD
+<APIProxy revision="6" name="askanapigeek">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1451018401286</CreatedAt>
+    <CreatedBy>vmehta+askanapigeek@apigee.com</CreatedBy>
+    <Description>This API gives recommendations and details by an Apigeek from foursquare and uber</Description>
+    <DisplayName>askanapigeek</DisplayName>
+    <LastModifiedAt>1451018401286</LastModifiedAt>
+    <LastModifiedBy>vmehta+askanapigeek@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignApigeekResponse</Policy>
+        <Policy>AssignApigeekResponseTop5</Policy>
+        <Policy>assignCorsSupport</Policy>
+        <Policy>assignFourSquarereqParams</Policy>
+        <Policy>calloutUberEstimate</Policy>
+        <Policy>extractFourSquareResponse</Policy>
+        <Policy>extractFromRequestPayload</Policy>
+        <Policy>extractFromUberResponse</Policy>
+        <Policy>jsAssembleUberAsyncCallouts</Policy>
+        <Policy>jsConvertUberDurationToMins</Policy>
+        <Policy>jsExtractOrigin</Policy>
+        <Policy>jsProcessAndMashUberResponse</Policy>
+        <Policy>jsUberAsyncCallouts</Policy>
+        <Policy>raiseUnknownResource</Policy>
+=======
+<APIProxy revision="1" name="askanapigeek">
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1443994481275</CreatedAt>
+    <CreatedBy>vmehta@apigee.com</CreatedBy>
+    <Description>This API gives recommendations and details by an Apigeek from foursquare and uber</Description>
+    <DisplayName>askanapigeek</DisplayName>
+    <LastModifiedAt>1444002013421</LastModifiedAt>
+    <LastModifiedBy>vmehta@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>AssignApigeekResponse</Policy>
+        <Policy>assignFourSquarereqParams</Policy>
+        <Policy>calloutUberEstimate</Policy>
+        <Policy>extractFourSquareResponse</Policy>
+        <Policy>extractFromUberResponse</Policy>
+        <Policy>test</Policy>
+>>>>>>> 9bf5effaa5a7b4762ee47b10fc1f9f2aeff3e6f4
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+<<<<<<< HEAD
+        <Resource>node://apigeeVaultOperations.js</Resource>
+        <Resource>node://node_modules.zip</Resource>
+        <Resource>node://package.json</Resource>
+        <Resource>jsc://jsAssembleUberAsyncCallouts.js</Resource>
+        <Resource>jsc://jsConvertUberDurationToMins.js</Resource>
+        <Resource>jsc://jsExtractOrigin.js</Resource>
+        <Resource>jsc://jsProcessAndMashUberResponse.js</Resource>
+        <Resource>jsc://jsUberAsyncCallouts.js</Resource>
+=======
+        <Resource>jsc://test.js</Resource>
+>>>>>>> 9bf5effaa5a7b4762ee47b10fc1f9f2aeff3e6f4
+    </Resources>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+<<<<<<< HEAD
+        <TargetEndpoint>nodeTarget</TargetEndpoint>
+    </TargetEndpoints>
+    <validate>true</validate>
+=======
+    </TargetEndpoints>
+    <validate>false</validate>
+>>>>>>> 9bf5effaa5a7b4762ee47b10fc1f9f2aeff3e6f4
+</APIProxy>
