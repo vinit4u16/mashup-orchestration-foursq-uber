@@ -23,9 +23,9 @@ TOP 1 of something
 
 curl -X POST -H "Content-Type: application/json" -d '{
 
-    "cat":"spa",
+    "cat":"pizza",
     "near":"San Jose"
-}' 'http://askanapigeek-test.apigee.net/v1/askanapigeek?select=top1'
+}' 'http://{org-name}-{env}.apigee.net/v1/askanapigeek?select=top1'
 
 TOP 5 of something
 
@@ -34,7 +34,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
 
     "cat":"burger",
     "near":"San Jose"
-}' 'http://askanapigeek-test.apigee.net/v1/askanapigeek?select=top5'
+}' 'http://{org-name}-{env}.apigee.net/v1/askanapigeek?select=top5'
 
 
 NOTE - The current location details are HARDCODED to the San Jose Convention Center's lat and lng.(DEMO purpose)
